@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        relese {
+            storeFile file('C:\\Aurora\\aw_key')
+            storePassword 'aw@2019'
+            keyAlias = 'aw_key_0'
+            keyPassword 'aw@2019'
+        }
+        debug {
+            storeFile file('C:\\Aurora\\aw_debug')
+            storePassword 'aw@2019'
+            keyAlias = 'aw_key_0'
+            keyPassword 'aw@2019'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.store.aurora"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+    testImplementation 'junit:junit:4.13-beta-3'
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta2'
+    testImplementation 'junit:junit:4.13-beta-3'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-vision:18.0.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.5'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.intellij:annotations:+@jar'
+
+
+}

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAshBack</item>
+        <item name="colorPrimaryDark">@color/colorDarkAsh</item>
+        <item name="colorAccent">@color/colorAshBack</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/colorDarkAsh</item>
+        <item name="colorControlActivated">@color/colorDarkAsh</item>
+        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>
+        <item name="colorSwitchThumbNormal">#FFC0CB</item>
+        <item name="android:colorForeground">@color/colorDarkAsh</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+
+    </style>
+
+</resources>

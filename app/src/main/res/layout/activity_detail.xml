@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAshBack"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+
+        android:id="@+id/item_detail"
+        android:layout_width="387dp"
+        android:layout_height="420dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="419dp"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:foreground="#00555555"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deliveryNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="left"
+                android:text="DeliveryNote"
+                android:textColor="#EEEAEA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deliveryNoteCustomerKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteCustomerKey"
+                android:textColor="#F1EFEF" />
+
+            <TextView
+                android:id="@+id/DeliveryNoteNumberOrderedParts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteNumberOrderedParts"
+                android:textColor="#F0EDE9" />
+
+            <TextView
+                android:id="@+id/StoreCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="StoreCode"
+                android:textColor="#D6CCCC" />
+
+            <TextView
+                android:id="@+id/DeliveryNoteCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteCustomerName"
+                android:textColor="#D6CBCB" />
+
+            <TextView
+                android:id="@+id/DeliveryNoteCustomerDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteCustomerDate"
+                android:textColor="#CEC3C3" />
+
+            <TextView
+                android:id="@+id/deliveryWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Weight"
+                android:textColor="#B4A5A5" />
+
+            <TextView
+                android:id="@+id/deliveryNoteId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteID"
+                android:textColor="#8D8686" />
+
+            <TextView
+                android:id="@+id/deliveryNoteKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteKey"
+                android:textColor="#C7B9B9" />
+
+            <TextView
+                android:id="@+id/DeliveryNoteStoreKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteStoreKey"
+                android:textColor="#ACA2A2" />
+
+            <TextView
+                android:id="@+id/DeliveryNoteType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="DeliveryNoteType"
+                android:textColor="#ACA4A4" />
+
+            <TextView
+                android:id="@+id/StoreName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="StoreName"
+                android:textColor="#978989" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Details "
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <TextView
+        android:id="@+id/sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part Sku"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

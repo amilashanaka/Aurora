@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Picking App </string>
+    <string name="scan_text">Focus to QR Code</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="btn1_welcome">Delivery Notes</string>
+
+</resources>

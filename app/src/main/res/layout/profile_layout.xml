@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="1dp"
+    android:background="#00FFFFFF"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/profileList"
+            android:layout_width="401dp"
+            android:layout_height="80dp"
+            android:background="#00FFFFFF"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+
+
+                android:background="#00FFFFFF"
+                app:srcCompat="@drawable/prof" />
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/staffName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="item 1"
+                    android:textColor="@color/colorDarkAsh"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/staffId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Delivery Note ID"
+
+                    android:textColor="@color/colorDarkAsh" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/workerType"
+
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginTop="17dp"
+                android:text="Date"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorDarkAsh"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
